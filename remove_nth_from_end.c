@@ -1,3 +1,6 @@
+    // This is recursion approach
+    // It is also possible use approach with pointers
+    // Maintain two pointers and update one with a delay of n steps.
     void removeN(ListNode** node, int& fl, int n)
     {
         if ((*node) != NULL)
