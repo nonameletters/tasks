@@ -52,6 +52,8 @@ public:
         while(l <= r)
         {
             // printf("L %d R %d\n", l , r);
+            // TODO: We don't need to check tt every time "r" is moved
+            //       check only when st[r] is in "tt"
             bool check = checkHach(st, tt);
             
             if (check)
