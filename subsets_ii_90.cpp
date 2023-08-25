@@ -1,3 +1,10 @@
+/*
+* First we need to sort array to rearrage all equail nums successively 
+* ex: [4,4,4,1,4] -> [1,4,4,4,4]
+* Then we use backtacking as in task 78. Main diffirence is that when we meet
+* the same number it is nessecary to skip numbers that we generatet by the same previous number
+* `new_born` value counts newly generated values. Then we take tail generated values.
+*/
 class Solution {
 public:
     vector<vector<int>> subsetsWithDup(vector<int>& nums) {
